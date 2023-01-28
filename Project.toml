@@ -1,0 +1,7 @@
+name = "InteractiveBeamVizualisation"
+uuid = "6b575270-86c3-4f3a-97d7-51f8b4207a74"
+authors = ["Marcos Gil <marcosgildeoliveira@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+GLMakie = "e9467ef8-e4e7-5192-8a1a-b1aee30e663a"
