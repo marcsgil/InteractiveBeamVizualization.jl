@@ -71,7 +71,7 @@ function interactive_vizualization(ψs::AbstractArray{T,4},xs,ys,zs;csmax) where
 
     current_Is = [lift(n->view(intensities,:,:,n,m),sl.value) for m in axes(ψs,4)]
     
-    title = Label(fig[0, :], L"z = %$(round(zs[1],digits=2))", textsize = 30)
+    title = Label(fig[0, :], L"z = %$(round(zs[1],digits=2))", fontsize = 30)
     lift(sl.value) do n
         title.text = L"z = %$(round(zs[n],digits=2))"
     end
@@ -126,7 +126,7 @@ function produce_animation(ψs::AbstractArray{T,4},xs,ys,zs,filename,framerate;c
     xlims!(first(xs),last(xs))
     ylims!(first(ys),last(ys))
     
-    title = Label(fig[0, :], L"z = %$(round(zs[1],digits=2))", textsize = 30)
+    title = Label(fig[0, :], L"z = %$(round(zs[1],digits=2))", fontsize = 30)
     
     counter = 1
     for i in eachindex(csmax)
